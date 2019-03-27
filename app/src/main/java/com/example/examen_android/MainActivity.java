@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean validateName(){
         String name = inputName.getText().toString().trim();
         if (name.isEmpty()){
-            inputLayoutName.setError(getString(R.string.error_name));
+            inputLayoutName.setError(getString(R.string.error_empty));
             return false;
         }else{
             inputLayoutName.setErrorEnabled(false);
@@ -108,8 +108,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean validateAge(){
-        int age = Integer.valueOf(inputAge.getText().toString().trim());
-        if (age < 0 || age > 150){
+        String age = inputAge.getText().toString().trim();
+        if (age.isEmpty()){
+            inputLayoutAge.setError(getString(R.string.error_empty));
+            return false;
+        }else if (Integer.valueOf(age) < 0 || Integer.valueOf(age) > 150){
             inputLayoutAge.setError(getString(R.string.error_age));
             return false;
         }else{

@@ -4,6 +4,6 @@
     <string name="age_hint">Edad:</string>
     <string name="description_hint">Descripción de la ofensa:</string>
     <string name="add">Añadir enemigo</string>
-    <string name="error_name">¡Campo obligatorio!</string>
+    <string name="error_empty">¡Campo obligatorio!</string>
     <string name="error_age">¡La edad debe estar entre 0 y 150!</string>
 </resources>
