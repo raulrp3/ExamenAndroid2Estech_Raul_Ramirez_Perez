@@ -18,7 +18,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private EditText inputName,inputAge,inputDescription;
-    private TextInputLayout inputLayoutName,inputLayoutAge,inputLayoutDescription;
+    private TextInputLayout inputLayoutName,inputLayoutAge;
     private Button buttonAdd;
 
     private List<Enemy> enemies;
@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         inputDescription = findViewById(R.id.input_description);
         inputLayoutName = findViewById(R.id.input_layout_name);
         inputLayoutAge = findViewById(R.id.input_layout_age);
-        inputLayoutDescription = findViewById(R.id.input_layout_description);
         buttonAdd = findViewById(R.id.button_add);
 
         rv = findViewById(R.id.rv);
